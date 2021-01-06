@@ -15,7 +15,7 @@ alpha = 1.2
 c = 6.815
 k = 1880
 b = 10.4
-phi = 5.25
+phi = 0.73
 V = 39.7
 
 
@@ -24,7 +24,7 @@ def ballmotion(_t, z):
     x2 = z[1]
     I = z[2]
     return [x2,
-            (5*m/7)*(m*g*np.sin(5.25)-k*(x1-d)-b*x2+c*((I)**2)/((delta-x1)**2)),
+            (5/7*m)*(m*g*np.sin(phi)-k*(x1-d)-b*x2+c*((I)**2)/((delta-x1)**2)),
             (V-I*R)/(L0+L1*np.exp(-alpha*(delta-x1)))]
 
 
