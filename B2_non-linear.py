@@ -48,6 +48,6 @@ x_trajectory = sol.y[0]
 plt.plot(times, x_trajectory.T)
 plt.xlabel('Time (s)')
 plt.ylabel('Ball position (m)')
-plt.title('Ball trajectory')
+plt.title('Ball trajectory in non-linear system')
 plt.grid()
 plt.show()
