@@ -42,10 +42,10 @@ sol = solve_ivp(ballmotion,
                 z_initial,
                 t_eval=np.linspace(0, t_final, num_points))
 time = sol.t
-x1_simulation = sol.y[0]
+x1_trajectory = sol.y[0]
 
 # Plot the Trajectory of ball
-plt . plot(time, x1_simulation.T)
+plt . plot(time, x1_trajectory.T)
 plt.xlabel('Time (s)')
 plt.ylabel('Ball position (m)')
 plt.title('Ball trajectory')
