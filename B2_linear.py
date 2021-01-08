@@ -31,7 +31,7 @@ def ballmotion(_t, z):
     I = z[2]
     return [x2,
             -(5*k/7*m)*x1-(5*b/7*m)*x2+(5*c/7*m)*(2*I*Ie/((delta-x1)**2) +2*x1*(Ie ** 2)/((delta-x1) ** 3)),
-            -R*I*(L0+L1 * np.exp(-alpha*(delta-x1)))-x1*((Ve-Ie*R)*L1*np.exp(-alpha * (delta - x1)))/(L0+L1*np.exp(-alpha*(delta-x1)))]
+            -R*I*(L0+L1 * np.exp(-alpha*(delta-x1)))-x1*((Ve-Ie*R)*L1*np.exp(-alpha * (delta - x1)))/((L0+L1*np.exp(-alpha*(delta-x1))))**2]
 
 # Initial value theorem
 z_initial = [x1e, 0, Ie]
