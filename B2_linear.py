@@ -22,7 +22,7 @@ x1e=0.478
 # Equilibrium points
 Ie=(((-m*g*np.sin(phi)+k*(x1e-d))*((delta-x1e)**2)/c))**(1/2)
 Ve=Ie*R
-V=Ve
+
 
 # linearised dynamical equations of the system
 def ballmotion(_t, z):
